@@ -90,7 +90,7 @@ class Psn(object):
         trophies['types']['gold'] = xml.find('types')['gold']
         trophies['types']['silver'] = xml.find('types')['silver']
         trophies['types']['bronze'] = xml.find('types')['bronze']
-        return json.dumps(trophies)
+        return json.dumps(trophies, indent=4, separators=(',', ': '))
 
     def games(self, jid):
         ''' Returns game id and trophies for a user. '''
@@ -127,7 +127,7 @@ class Psn(object):
             game['trophies']['silver'] = xml.find('types')['silver']
             game['trophies']['bronze'] = xml.find('types')['bronze']
             games.append(game)
-        return json.dumps(games)
+        return json.dumps(games, indent=4, separators=(',', ': '))
 
     def game_trophies(self, jid, npcommid):
         headers = {
@@ -156,5 +156,5 @@ class Psn(object):
                 game_trophy['type'] = 'platinum'
             game_trophy['date_obtained'] = trophy.text
             game_trophies.append(game_trophy)
-        return json.dumps(game_trophies)
+        return json.dumps(game_trophies, indent=4, separators=(',', ': '))
 
