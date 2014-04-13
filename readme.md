@@ -1,3 +1,7 @@
+### Update: 13/5/2014
+
+It would appear that Sony is now blocking access to their data, thus this API is no longer functional.
+
 ### Things to Note
 
 * This uses a hacked together backdoor into the API, therefore it lacks such things as game names, trophy images, etc. It's better than nothing, credit to the people who found the backdoor.
