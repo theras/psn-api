@@ -1,3 +1,7 @@
+### Update: 16/5/2014
+
+No longer maintained. [Node.js based PSN API](https://github.com/jhewt/gumer-psn).
+
 ### Update: 13/5/2014
 
 It would appear that Sony is now blocking access to their data, thus this API is no longer functional.
